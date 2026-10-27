@@ -1,0 +1,478 @@
+{
+  "Andy.png": {
+    "file": "optimized/Andy.png.webp",
+    "width": 483,
+    "height": 516,
+    "original_bytes": 187323,
+    "bytes": 10890
+  },
+  "Anya.png": {
+    "file": "optimized/Anya.png.webp",
+    "width": 459,
+    "height": 623,
+    "original_bytes": 43111,
+    "bytes": 18360
+  },
+  "Atharv.png": {
+    "file": "optimized/Atharv.png.webp",
+    "width": 451,
+    "height": 554,
+    "original_bytes": 239530,
+    "bytes": 17098
+  },
+  "BecomeAnExecutive.png": {
+    "file": "optimized/BecomeAnExecutive.png.webp",
+    "width": 131,
+    "height": 131,
+    "original_bytes": 19790,
+    "bytes": 2486
+  },
+  "Bonnie.png": {
+    "file": "optimized/Bonnie.png.webp",
+    "width": 861,
+    "height": 1301,
+    "original_bytes": 304369,
+    "bytes": 10454
+  },
+  "BronteVillageSponsor.png": {
+    "file": "optimized/BronteVillageSponsor.png.webp",
+    "width": 445,
+    "height": 442,
+    "original_bytes": 75046,
+    "bytes": 6410
+  },
+  "Dinumi_Premawardena.png": {
+    "file": "optimized/Dinumi_Premawardena.png.webp",
+    "width": 365,
+    "height": 391,
+    "original_bytes": 284553,
+    "bytes": 31302
+  },
+  "Elsa.png": {
+    "file": "optimized/Elsa.png.webp",
+    "width": 449,
+    "height": 556,
+    "original_bytes": 269570,
+    "bytes": 16042
+  },
+  "Emily_Liu.png": {
+    "file": "optimized/Emily_Liu.png.webp",
+    "width": 450,
+    "height": 442,
+    "original_bytes": 349228,
+    "bytes": 28488
+  },
+  "EnterTheCompetition.png": {
+    "file": "optimized/EnterTheCompetition.png.webp",
+    "width": 131,
+    "height": 131,
+    "original_bytes": 4231,
+    "bytes": 1690
+  },
+  "Isabell.png": {
+    "file": "optimized/Isabell.png.webp",
+    "width": 449,
+    "height": 556,
+    "original_bytes": 243537,
+    "bytes": 14448
+  },
+  "Karan.png": {
+    "file": "optimized/Karan.png.webp",
+    "width": 433,
+    "height": 577,
+    "original_bytes": 244533,
+    "bytes": 19396
+  },
+  "Nabiha.png": {
+    "file": "optimized/Nabiha.png.webp",
+    "width": 430,
+    "height": 581,
+    "original_bytes": 252988,
+    "bytes": 14014
+  },
+  "Pavani.png": {
+    "file": "optimized/Pavani.png.webp",
+    "width": 456,
+    "height": 547,
+    "original_bytes": 204669,
+    "bytes": 10584
+  },
+  "Rose_Luxton.png": {
+    "file": "optimized/Rose_Luxton.png.webp",
+    "width": 475,
+    "height": 592,
+    "original_bytes": 384089,
+    "bytes": 21888
+  },
+  "Sara.jpg": {
+    "file": "optimized/Sara.jpg.webp",
+    "width": 926,
+    "height": 1240,
+    "original_bytes": 67888,
+    "bytes": 64072
+  },
+  "ShareYourIdeas.png": {
+    "file": "optimized/ShareYourIdeas.png.webp",
+    "width": 131,
+    "height": 131,
+    "original_bytes": 3620,
+    "bytes": 1222
+  },
+  "UniversityOfWaterloo-Logo.png": {
+    "file": "optimized/UniversityOfWaterloo-Logo.png.webp",
+    "width": 222,
+    "height": 63,
+    "original_bytes": 15850,
+    "bytes": 8046
+  },
+  "account.png": {
+    "file": "optimized/account.png.webp",
+    "width": 528,
+    "height": 472,
+    "original_bytes": 132940,
+    "bytes": 25914
+  },
+  "add-reply.png": {
+    "file": "optimized/add-reply.png.webp",
+    "width": 64,
+    "height": 78,
+    "original_bytes": 8383,
+    "bytes": 910
+  },
+  "blank.png": {
+    "file": "optimized/blank.png.webp",
+    "width": 1400,
+    "height": 1084,
+    "original_bytes": 177815,
+    "bytes": 79604
+  },
+  "classroom.png": {
+    "file": "optimized/classroom.png.webp",
+    "width": 256,
+    "height": 222,
+    "original_bytes": 30320,
+    "bytes": 2410
+  },
+  "drarrow-dark.png": {
+    "file": "optimized/drarrow-dark.png.webp",
+    "width": 512,
+    "height": 512,
+    "original_bytes": 6693,
+    "bytes": 1988
+  },
+  "drarrow-light.png": {
+    "file": "optimized/drarrow-light.png.webp",
+    "width": 512,
+    "height": 512,
+    "original_bytes": 6675,
+    "bytes": 1988
+  },
+  "earth.png": {
+    "file": "optimized/earth.png.webp",
+    "width": 490,
+    "height": 604,
+    "original_bytes": 320294,
+    "bytes": 39834
+  },
+  "email-button.jpg": {
+    "file": "optimized/email-button.jpg.webp",
+    "width": 45,
+    "height": 45,
+    "original_bytes": 3528,
+    "bytes": 624
+  },
+  "email.png": {
+    "file": "optimized/email.png.webp",
+    "width": 278,
+    "height": 204,
+    "original_bytes": 11064,
+    "bytes": 3844
+  },
+  "filler.png": {
+    "file": "optimized/filler.png.webp",
+    "width": 540,
+    "height": 360,
+    "original_bytes": 213358,
+    "bytes": 44978
+  },
+  "hand.png": {
+    "file": "optimized/hand.png.webp",
+    "width": 799,
+    "height": 531,
+    "original_bytes": 192191,
+    "bytes": 8656
+  },
+  "hands-together.JPG": {
+    "file": "optimized/hands-together.JPG.webp",
+    "width": 877,
+    "height": 1400,
+    "original_bytes": 1316877,
+    "bytes": 96722
+  },
+  "image-impact.png": {
+    "file": "optimized/image-impact.png.webp",
+    "width": 1400,
+    "height": 933,
+    "original_bytes": 1719982,
+    "bytes": 66136
+  },
+  "image-innovate.png": {
+    "file": "optimized/image-innovate.png.webp",
+    "width": 934,
+    "height": 1400,
+    "original_bytes": 149005,
+    "bytes": 12648
+  },
+  "image-inspire.png": {
+    "file": "optimized/image-inspire.png.webp",
+    "width": 600,
+    "height": 800,
+    "original_bytes": 558463,
+    "bytes": 24558
+  },
+  "insta.png": {
+    "file": "optimized/insta.png.webp",
+    "width": 354,
+    "height": 354,
+    "original_bytes": 69488,
+    "bytes": 7398
+  },
+  "joinus.png": {
+    "file": "optimized/joinus.png.webp",
+    "width": 612,
+    "height": 408,
+    "original_bytes": 213742,
+    "bytes": 37666
+  },
+  "leader.png": {
+    "file": "optimized/leader.png.webp",
+    "width": 532,
+    "height": 469,
+    "original_bytes": 114783,
+    "bytes": 21802
+  },
+  "lesson0.png": {
+    "file": "optimized/lesson0.png.webp",
+    "width": 1870,
+    "height": 897,
+    "original_bytes": 291658,
+    "bytes": 111046
+  },
+  "lesson1.png": {
+    "file": "optimized/lesson1.png.webp",
+    "width": 1161,
+    "height": 651,
+    "original_bytes": 68338,
+    "bytes": 47850
+  },
+  "lesson2.png": {
+    "file": "optimized/lesson2.png.webp",
+    "width": 1161,
+    "height": 652,
+    "original_bytes": 68002,
+    "bytes": 33648
+  },
+  "lesson3.png": {
+    "file": "optimized/lesson3.png.webp",
+    "width": 1160,
+    "height": 652,
+    "original_bytes": 96892,
+    "bytes": 41822
+  },
+  "lesson4.png": {
+    "file": "optimized/lesson4.png.webp",
+    "width": 1162,
+    "height": 650,
+    "original_bytes": 51473,
+    "bytes": 24238
+  },
+  "lesson5.png": {
+    "file": "optimized/lesson5.png.webp",
+    "width": 1159,
+    "height": 651,
+    "original_bytes": 68176,
+    "bytes": 35328
+  },
+  "lesson6.png": {
+    "file": "optimized/lesson6.png.webp",
+    "width": 1159,
+    "height": 651,
+    "original_bytes": 53938,
+    "bytes": 24382
+  },
+  "lesson7.png": {
+    "file": "optimized/lesson7.png.webp",
+    "width": 1158,
+    "height": 651,
+    "original_bytes": 90487,
+    "bytes": 43606
+  },
+  "lessonextras.png": {
+    "file": "optimized/lessonextras.png.webp",
+    "width": 960,
+    "height": 540,
+    "original_bytes": 23366,
+    "bytes": 10444
+  },
+  "lightbulb.png": {
+    "file": "optimized/lightbulb.png.webp",
+    "width": 799,
+    "height": 532,
+    "original_bytes": 206535,
+    "bytes": 10238
+  },
+  "likes-grey.png": {
+    "file": "optimized/likes-grey.png.webp",
+    "width": 80,
+    "height": 68,
+    "original_bytes": 5896,
+    "bytes": 456
+  },
+  "likes.png": {
+    "file": "optimized/likes.png.webp",
+    "width": 80,
+    "height": 68,
+    "original_bytes": 8746,
+    "bytes": 686
+  },
+  "linkedin.png": {
+    "file": "optimized/linkedin.png.webp",
+    "width": 334,
+    "height": 338,
+    "original_bytes": 57880,
+    "bytes": 2644
+  },
+  "location.png": {
+    "file": "optimized/location.png.webp",
+    "width": 1106,
+    "height": 1400,
+    "original_bytes": 188015,
+    "bytes": 27980
+  },
+  "logo.png": {
+    "file": "optimized/logo.png.webp",
+    "width": 199,
+    "height": 199,
+    "original_bytes": 48557,
+    "bytes": 28932
+  },
+  "mic.png": {
+    "file": "optimized/mic.png.webp",
+    "width": 799,
+    "height": 530,
+    "original_bytes": 204855,
+    "bytes": 9480
+  },
+  "passion.png": {
+    "file": "optimized/passion.png.webp",
+    "width": 530,
+    "height": 471,
+    "original_bytes": 131613,
+    "bytes": 27066
+  },
+  "quote.png": {
+    "file": "optimized/quote.png.webp",
+    "width": 152,
+    "height": 118,
+    "original_bytes": 5665,
+    "bytes": 3084
+  },
+  "relove.png": {
+    "file": "optimized/relove.png.webp",
+    "width": 1400,
+    "height": 785,
+    "original_bytes": 778699,
+    "bytes": 46250
+  },
+  "replies.png": {
+    "file": "optimized/replies.png.webp",
+    "width": 104,
+    "height": 96,
+    "original_bytes": 10693,
+    "bytes": 356
+  },
+  "right-arrow.png": {
+    "file": "optimized/right-arrow.png.webp",
+    "width": 512,
+    "height": 512,
+    "original_bytes": 2284,
+    "bytes": 1850
+  },
+  "slide1.png": {
+    "file": "optimized/slide1.png.webp",
+    "width": 1538,
+    "height": 1188,
+    "original_bytes": 941683,
+    "bytes": 412306
+  },
+  "slide2.png": {
+    "file": "optimized/slide2.png.webp",
+    "width": 1620,
+    "height": 1188,
+    "original_bytes": 1009833,
+    "bytes": 463680
+  },
+  "slide3.png": {
+    "file": "optimized/slide3.png.webp",
+    "width": 1534,
+    "height": 1188,
+    "original_bytes": 853359,
+    "bytes": 436918
+  },
+  "slide4.png": {
+    "file": "optimized/slide4.png.webp",
+    "width": 1534,
+    "height": 1188,
+    "original_bytes": 642294,
+    "bytes": 311532
+  },
+  "slide5.png": {
+    "file": "optimized/slide5.png.webp",
+    "width": 1534,
+    "height": 1188,
+    "original_bytes": 871844,
+    "bytes": 413210
+  },
+  "slide6.png": {
+    "file": "optimized/slide6.png.webp",
+    "width": 1534,
+    "height": 1188,
+    "original_bytes": 944130,
+    "bytes": 492450
+  },
+  "slide7.png": {
+    "file": "optimized/slide7.png.webp",
+    "width": 1534,
+    "height": 1188,
+    "original_bytes": 184001,
+    "bytes": 60298
+  },
+  "testimonial1.png": {
+    "file": "optimized/testimonial1.png.webp",
+    "width": 1050,
+    "height": 1400,
+    "original_bytes": 274632,
+    "bytes": 187372
+  },
+  "testimonial2.jpeg": {
+    "file": "optimized/testimonial2.jpeg.webp",
+    "width": 600,
+    "height": 800,
+    "original_bytes": 71075,
+    "bytes": 58052
+  },
+  "working-together.png": {
+    "file": "optimized/working-together.png.webp",
+    "width": 612,
+    "height": 408,
+    "original_bytes": 268316,
+    "bytes": 35794
+  },
+  "TaskIt.png": {
+    "file": "optimized/TaskIt.png.webp",
+    "width": 788,
+    "height": 444,
+    "original_bytes": 42501,
+    "bytes": 17248
+  }
+}
