@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export the public templates using Python's standard library; no Flask runtime."""
+"""makes the pages work without running flask"""
 from pathlib import Path
 import re
 import shutil
@@ -27,7 +27,7 @@ def convert(text, prefix):
     text = re.sub(r'<!--.*?-->', '', text, flags=re.S)
     text = re.sub(r"{{\s*url_for\(['\"]static['\"],\s*filename=['\"]([^'\"]+)['\"]\)\s*}}",
                   lambda m: prefix + 'static/' + m[1], text)
-    # Local links work under either the custom domain or a GitHub project subpath.
+    # keep links working on the domain and github pages
     def link(m):
         attr, quote, value = m.groups()
         parsed = urlsplit(value)
@@ -45,7 +45,7 @@ def convert(text, prefix):
     text = re.sub(r'<script\b[^>]*src=[\'\"]https://code.jquery.com/[^>]*></script>', '', text)
     text = text.replace('share your ideas on a nationwide forum!', 'connect through our community channels!')
     text = text.replace('>Forum</a>', '>Community</a>').replace('See the Forum', 'Join the Community')
-    # Shared discussions now happen through the existing community channels.
+    # send people to the community links now
     text = text.replace('contribute your thoughts to a live forum.', 'connect through our community channels.')
     text = text.replace('Share your ideas through a Canada-wide forum to hear the opinions of others, and further expand your plan. See what others have to share and collaborate with your peers!', 'Connect through our community channels to share ideas, hear from others, and collaborate with your peers!')
     text = text.replace('Feel Free to reply to the comments of others.', 'Connect with others through our community channels.')
@@ -59,7 +59,7 @@ def convert(text, prefix):
         entry = IMAGES.get(filename)
         if entry:
             tag = tag.replace(source[1], source[1].rsplit('/images/', 1)[0] + '/images/' + entry['file'])
-            # Width and height reserve the natural aspect ratio before decoding.
+            # leave room for the image before it loads
             tag = re.sub(r'\s+(?:width|height)=[\'\"][^\'\"]*[\'\"]', '', tag)
             tag = tag[:-1] + f' width="{entry["width"]}" height="{entry["height"]}">'
         if 'id="earth"' in tag or 'id="top-logo"' in tag:
@@ -81,7 +81,7 @@ def build():
             else:
                 child.unlink()
     OUT.mkdir(exist_ok=True)
-    # Allowlist public files only. Never ship databases, secrets, virtualenvs or Python server files.
+    # only copy the public files. leave the server stuff out
     for folder in ('images', 'fonts', 'Files'):
         shutil.copytree(ROOT / 'static' / folder, OUT / 'static' / folder,
                         ignore=shutil.ignore_patterns('.DS_Store'), dirs_exist_ok=True)
@@ -94,7 +94,7 @@ def build():
         for name in names:
             shutil.copyfile(ROOT / 'static' / category / f'{name}.{category}', dest / f'{name}.{category}')
     for original in IMAGES:
-        if original == 'logo.png':  # PNG remains the favicon.
+        if original == 'logo.png':  # keep the png for the tab icon
             continue
         (OUT / 'static' / 'images' / original).unlink(missing_ok=True)
     for page in PAGES:
@@ -103,7 +103,7 @@ def build():
         (dest / 'index.html').write_text(convert(render(page), './' if page == 'index' else '../'))
         if page != 'index':
             (OUT / (page + '.html')).write_text(convert(render(page), './'))
-    # Existing account URLs remain useful, with no simulated authentication.
+    # old account links go to the community page
     for old in ('login', 'register', 'register-verified'):
         dest = OUT / old
         dest.mkdir()

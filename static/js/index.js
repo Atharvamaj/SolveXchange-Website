@@ -1,1 +1,1 @@
-// Shared navigation is managed by global.js.
+// nav stuff is in global.js

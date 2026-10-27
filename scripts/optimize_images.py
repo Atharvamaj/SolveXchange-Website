@@ -1,4 +1,4 @@
-"""Optional asset preparation (Pillow required); normal static builds need only stdlib."""
+"""shrinks the images using pillow. only run this when the images change"""
 from pathlib import Path
 import json
 import sys
@@ -18,7 +18,7 @@ for source in sorted(IMAGES.iterdir()):
         im = ImageOps.exif_transpose(original)
         if source.name == 'earth.png' and im.mode == 'RGBA':
             im = im.crop(im.getbbox())
-        # Preserve slide artwork and embedded text losslessly.
+        # keep the slide text sharp
         artwork = source.stem.lower().startswith(('lesson', 'slide')) or 'logo' in source.stem.lower() or source.stem.lower() == 'taskit'
         if not artwork:
             im.thumbnail((1400, 1400), Image.Resampling.LANCZOS)

@@ -1,4 +1,4 @@
-// Public website navigation. No API, cookies, or account state required.
+// menu stuff lives here
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
     if (!sidebar) return;
@@ -20,7 +20,7 @@ document.addEventListener('keydown', event => {
     if (event.key === 'Escape') hideSidebar();
 });
 
-// Keep menu and expandable content usable with touch and keyboard controls.
+// let the keyboard open the menu and extra bits too
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.querySelector('.sidebar');
     const open = document.querySelector('.menubutton a');
