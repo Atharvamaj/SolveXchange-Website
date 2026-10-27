@@ -16,8 +16,6 @@ for source in sorted(IMAGES.iterdir()):
         continue
     with Image.open(source) as original:
         im = ImageOps.exif_transpose(original)
-        if source.name == 'earth.png' and im.mode == 'RGBA':
-            im = im.crop(im.getbbox())
         # keep the slide text sharp
         artwork = source.stem.lower().startswith(('lesson', 'slide')) or 'logo' in source.stem.lower() or source.stem.lower() == 'taskit'
         if not artwork:

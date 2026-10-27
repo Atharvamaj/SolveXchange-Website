@@ -169,10 +169,10 @@
   },
   "earth.png": {
     "file": "optimized/earth.png.webp",
-    "width": 490,
-    "height": 604,
+    "width": 629,
+    "height": 942,
     "original_bytes": 320294,
-    "bytes": 39834
+    "bytes": 39998
   },
   "email-button.jpg": {
     "file": "optimized/email-button.jpg.webp",

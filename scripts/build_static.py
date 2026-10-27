@@ -59,9 +59,7 @@ def convert(text, prefix):
         entry = IMAGES.get(filename)
         if entry:
             tag = tag.replace(source[1], source[1].rsplit('/images/', 1)[0] + '/images/' + entry['file'])
-            # leave room for the image before it loads
-            tag = re.sub(r'\s+(?:width|height)=[\'\"][^\'\"]*[\'\"]', '', tag)
-            tag = tag[:-1] + f' width="{entry["width"]}" height="{entry["height"]}">'
+            # keep the sizing from the template
         if 'id="earth"' in tag or 'id="top-logo"' in tag:
             tag = tag[:-1] + ' fetchpriority="high" decoding="async">'
         else:

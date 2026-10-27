@@ -41,6 +41,12 @@ The separate SolveXLabs PWA and its backend are outside this conversion. When sw
 
 Responsive content widths and spacing now support phones, tablets and desktops. The update restores homepage sections previously hidden on mobile, fixes stretched images and the squeezed judge biography, and makes success stories swipeable on phones. Values descriptions remain visible on touchscreens. Menus and expansion controls support keyboard input and larger touch targets.
 
-WebP assets are committed under `static/images/optimized/`; normal builds still require only Python's standard library. The optional `python scripts/optimize_images.py` regeneration command requires Pillow. Slides and logos use lossless compression; other images use quality 86 with a 1400-pixel maximum dimension. Original source images remain in the repository. Lazy loading, intrinsic dimensions and consolidated font requests improve mobile loading.
+WebP assets are committed under `static/images/optimized/`; normal builds still require only Python's standard library. The optional `python scripts/optimize_images.py` regeneration command requires Pillow. Slides and logos use lossless compression; other images use quality 86 with a 1400-pixel maximum dimension. Original source images remain in the repository. Lazy loading, original image size settings and consolidated font requests improve mobile loading.
 
 Validation compares all exported body text with the previous static version, checks local links/assets and examines layouts at small-phone, phone, tablet and desktop widths. No deployment or DNS change is included.
+
+## Original design corrections
+
+Desktop pages now use the original master typography, button styling and image crops. The responsive presentation rules apply to phones and tablets. Targeted desktop rules align the values cards, participation cards, footer columns and FAQ actions, while keeping the judge biography readable. The export preserves width and height attributes from the original HTML instead of replacing them. Font imports are removed as complete CSS statements so page font rules remain valid.
+
+Checked the original image size attributes on all six public pages, unchanged body text on all 19 exports, and page overflow at four screen widths.
