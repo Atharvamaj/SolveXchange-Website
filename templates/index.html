@@ -32,20 +32,20 @@
     <div id="top-bar">
         <img id="top-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Organization Logo">
         <div id = "top-interactables">
-            <p class="toplink"><a class="toplinka_" href="http://127.0.0.1:5000/">Home Page</a></p>
-            <p class="toplink"><a class="toplinka"href="http://127.0.0.1:5000/aboutus">About Us</a></p>
-            <p class="toplink"><a class="toplinka"href="http://127.0.0.1:5000/forum">Forum</a></p>
-            <p class="toplink"><a class="toplinka"href="http://127.0.0.1:5000/resources">Resources</a></p>
-            <p class="toplink"><a class="toplinka"href="http://127.0.0.1:5000/faq">FAQ</a></p>
-            <p class="toplink"><a class="toplinka"href="http://127.0.0.1:5000/getinvolved">Get Involved</a></p>
-            <p class="toplink"><a class="toplinka" id="log-in" href="http://127.0.0.1:5000/login">Log In</a></p>
+            <p class="toplink"><a class="toplinka_" href="/">Home Page</a></p>
+            <p class="toplink"><a class="toplinka"href="/aboutus">About Us</a></p>
+            <p class="toplink"><a class="toplinka"href="/forum">Forum</a></p>
+            <p class="toplink"><a class="toplinka"href="/resources">Resources</a></p>
+            <p class="toplink"><a class="toplinka"href="/faq">FAQ</a></p>
+            <p class="toplink"><a class="toplinka"href="/getinvolved">Get Involved</a></p>
+            <p class="toplink"><a class="toplinka" id="log-in" href="/login">Log In</a></p>
         </div>
     </div>    
     <div id="topwrapper">
         <div id="leftwrappertop">
             <p id="headertext">SolveXChange</p>
             <p id="subtitletext">Turning Vision into Reality, One Proposal at a Time</p>
-            <a href="http://127.0.0.1:5000/aboutus"><button type="button" id="aboutus-button">ABOUT US</button></a>
+            <a href="/aboutus"><button type="button" id="aboutus-button">ABOUT US</button></a>
 
         </div>
 
@@ -71,7 +71,7 @@
                 <div id="impact-text-section">
                     <p class="style2-header-text">Impact</p>
                     <p class="style2-desc-text">Students make a tangible impact by implementing sustainable<br>solutions that address real-world challenges in their communities.</p>
-                    <div class="style2-button-wrapper"><a href="http://127.0.0.1:5000/resources"><button type="button" class="style1-button">Resources<img class="style1-right-arrow" draggable="false "src="{{ url_for('static', filename='images/right-arrow.png') }}"> </button></a></div>
+                    <div class="style2-button-wrapper"><a href="/resources"><button type="button" class="style1-button">Resources<img class="style1-right-arrow" draggable="false "src="{{ url_for('static', filename='images/right-arrow.png') }}"> </button></a></div>
                 </div>
                 
             </div>
@@ -80,7 +80,7 @@
                 <div id="inspire-text-section">
                     <p class="style1-header-text">Inspire</p>
                     <p class="style1-desc-text">Students inspire others by demonstrating dedication in serving</br>their community, and motivating peers to contribute to change.</p>
-                    <div class="style1-button-wrapper"><a href="http://127.0.0.1:5000/forum"><button type="button" class="style1-button">Share ideas <img class="style1-right-arrow" draggable="false "src="{{ url_for('static', filename='images/right-arrow.png') }}"> </button></a></div>
+                    <div class="style1-button-wrapper"><a href="/forum"><button type="button" class="style1-button">Share ideas <img class="style1-right-arrow" draggable="false "src="{{ url_for('static', filename='images/right-arrow.png') }}"> </button></a></div>
                 </div>
                 <img class="style1-round-image" draggable="false" src="{{ url_for('static', filename='images/mic.png') }}">
             </div>
@@ -171,7 +171,7 @@
                 <div class="extra-info-subtext">
                     <p>Interested in becoming a leader?<br>Open a chapter of SolveXchange<br>at your high school! Become a<br>part of our growing executive<br>team by bringing SolveXchange<br>to your own community.</p>
                 </div>
-                <a href="http://127.0.0.1:5000/getinvolved"><button id="getinvolved-button2" type="button">Get Involved</button></a>
+                <a href="/getinvolved"><button id="getinvolved-button2" type="button">Get Involved</button></a>
             </div>
             <div class="extra-format">
                 <label class="extra-info-subtitle">Join Our Exec Team</label>

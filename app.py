@@ -2,11 +2,11 @@ from database import *
 from sqlalchemy import func
 from flask_migrate import Migrate
 import secrets
+import os
 
 migrate = Migrate(app, db)
 
 login_expiration_time = timedelta(days=1, hours=0, minutes=0, seconds=0)
-domain = '127.0.0.1:5000'
 
 #region Redirects
 @app.route('/')
@@ -193,7 +193,7 @@ def send_verification_email():
     token = current_token.token if current_token else generate_token()
 
     msg = Message('Verify your email', sender='solvexchange@hotmail.com', recipients=[data['email']])
-    msg.body = f'click link please\nhttp://127.0.0.1:5000/register?email={data["email"]}&token={token}'
+    msg.body = f'click link please\n{url_for("register", _external=True, email=data["email"], token=token)}'
     mail.send(msg)
 
     if current_token:
@@ -279,4 +279,4 @@ def calculate_time(time):
 #endregion
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=int(os.environ.get('PORT', '5000')))

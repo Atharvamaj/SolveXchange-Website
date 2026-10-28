@@ -22,7 +22,7 @@ def name():
     return render_template('name.html')
 ```
 Where `name` would be then name of your html document.
-Go to the link `127.0.0.1:5000/name` and your document should pop up.
+Go to `http://127.0.0.1:<port>/name`, using the port the app is running on.
 
 If you want to add a styling sheet, instead of putting the direct path (i.e. `static/css/stylesheet.css`), use `{{url_for('static', 'css/stylesheet.css')}}` instead.
 
@@ -53,7 +53,9 @@ If you want to add a styling sheet, instead of putting the direct path (i.e. `st
 1. Using either IDLE or Visual Studio Code, create a terminal.
 2. Type in `pip install flask` and hit enter. If this does not work, try `pip3` or `py3` instead of `pip`.
 3. Repeat with `pip install flask flask-sqlalchemy`, `pip install flask_sqlalchemy` and `pip install flask_mail`.
-4. Run the `app.py` file then open the website at [`127.0.0.1:5000/comments`](http://127.0.0.1:5000/comments)
+4. Run the `app.py` file then open the website at `http://127.0.0.1:<port>/forum` (the default port is 5000).
+
+To use a different port, set the `PORT` environment variable before running the app, for example: `PORT=53809 python app.py`.
 
 
 
