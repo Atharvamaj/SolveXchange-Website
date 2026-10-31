@@ -1,5 +1,7 @@
 # SolveXchange
 
+<p align="center"><img src="images/logo.webp" width="100" alt="SolveXchange logo"></p>
+
 [www.solvexchange.org](https://www.solvexchange.org)
 
 The public website for SolveXchange. Built with HTML, CSS and JavaScript.
