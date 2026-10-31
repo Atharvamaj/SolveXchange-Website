@@ -1,67 +1,75 @@
-# For Front-end Developers
+# SolveXchange Website
 
-## How to use this repo:
+<p align="center"><img src="images/logo.webp" width="100" alt="SolveXchange logo"></p>
 
-**PLEASE WORK ON YOUR OWN BRANCH**
+**Turning Vision into Reality, One Pitch at a Time.**
 
-*If your branch doesn't exist please create your own as a branch off of main. (Please name it after yourself)*
+[Visit the website](https://www.solvexchange.org)
 
-First when opening this folder, there will be a `static` and `templates` folder. These are used to hold all the html, css and js files. When creating a new html doc, instead of using the standard format, refer to the `base.html` file.
+SolveXchange is a student led initiative helping young people turn ideas for their communities into real projects. This repository contains its public website, made with HTML, CSS and JavaScript and ready for GitHub Pages.
 
-`base.html` has a few things that you will need to know about.
-1. Firstly, `{% block name %}` and `{% endblock %}` are used to contain stuff that would eventually replace where it exists in `base.html`
-2. `{{var_name}}`, this is used when you want to add a variable to the html. If you do use this, please add a comment at the top of the doc saying which are needed. I do need to add it to the backend.
-3. `{{var_name | filter}}`, this is the same as #2 but use this if you want `var_name` to be altered in some way. Please name the filter accordingly and also say what it needs to do for in the comment as well.
+## Why this fork exists
 
-If you want to test your code, run the file named `app.py`.
+This project is forked from [yih0nk/SolveXchange-Website](https://github.com/yih0nk/SolveXchange-Website). The original project used Python and Flask. This fork keeps the public website separate from the SolveXLabs PWA and makes it possible to host the website on GitHub Pages without a backend or database.
 
-When creating a new html document, in the file `app.py`, add the following lines of code:
-```python
-@app.route('/name')
-def name():
-    return render_template('name.html')
+The original project and its contributors are credited for the website, content and visual identity. The original layout, colors, typography and carousel are retained. This fork removes the backend and applies the requested content, sizing and alignment fixes.
+
+## Run it
+
+Open the folder with a static web server. For example, if Python is installed:
+
+```sh
+python -m http.server 8000
 ```
-Where `name` would be then name of your html document.
-Go to the link `127.0.0.1:5000/name` and your document should pop up.
 
-If you want to add a styling sheet, instead of putting the direct path (i.e. `static/css/stylesheet.css`), use `{{url_for('static', 'css/stylesheet.css')}}` instead.
+Then open http://localhost:8000. Python is only used for this optional local preview. The published website does not run Python.
 
-# How to GitHub
+There is no package installation or build step.
 
-## Using GitHub:
+## Edit it
 
-1. Signup for a GitHub account.
-2. Download GitHub Desktop.
-3. Sign in to your account on GitHub Desktop
+| Page | File |
+| --- | --- |
+| Home | `index.html` |
+| About Us | `html/aboutus.html` |
+| Resources | `html/resources.html` |
+| FAQ | `html/faq.html` |
+| Get Involved | `html/getinvolved.html` |
 
-## How to fork this repository (How to get the code):
+Images are in `images`. Page styles are in `css`. The small layout fixes are in `css/adjustments.css`. Navigation and expandable sections are in `javascript/site.js`. The original carousel animation is in `css/index.css`, with its loop fixes in `css/adjustments.css`. The script waits for its pictures to load before scrolling.
 
-1. Click `Clone a Repository from the Internet...`.
-5. Select `URL`.
-6. Paste this URL, `https://github.com/paidvbux/Stock-XChange-Website`.
-7. Click `Clone`.
-8. Click "Fetch origin" at the top.
+The success stories keep the original automatic scrolling carousel. The loop spacing is corrected and the images scale with the screen. Hovering or focusing the strip pauses it. Reduced motion settings stop the animation.
 
-## How to use after forking this repository:      
+If you add or remove a page, update the navigation in the five HTML files. Keep only the images that the pages use.
 
-1. Click "Fetch origin" to update the code to the latest version.
+## Publish on GitHub Pages
 
-# How to run the code
+1. Replace the old website files with this folder's contents, keeping the same folder structure. Keep your existing `.git` folder so the repository history stays intact. Review the changes, then commit and push them yourself to your chosen branch.
+2. In repository Settings, open Pages.
+3. Choose Deploy from a branch, then your branch and the root folder.
+4. Set the custom domain to `www.solvexchange.org` and configure its DNS using the instructions GitHub provides.
+5. Enable HTTPS when it becomes available.
 
-## If you do not have flask installed:
+Include `.nojekyll` and `CNAME` when uploading. The separate PWA subdomain should keep its existing DNS settings.
 
-1. Using either IDLE or Visual Studio Code, create a terminal.
-2. Type in `pip install flask` and hit enter. If this does not work, try `pip3` or `py3` instead of `pip`.
-3. Repeat with `pip install flask flask-sqlalchemy`, `pip install flask_sqlalchemy` and `pip install flask_mail`.
-4. Run the `app.py` file then open the website at [`127.0.0.1:5000/comments`](http://127.0.0.1:5000/comments)
+The old Flask application, database, virtual environment, login pages and forum are not part of this version. External registration forms, lesson links and social links still open their existing services.
 
+## Folder structure
 
+The root index.html is the home page. Named pages live in html, styles in css, scripts in javascript and pictures in images. The root 404.html and Google verification file must stay at the root for hosting and verification.
 
-## If it still does not work (vs code solution)
+## Before going live
 
-1. Hit `CTRL + SHIFT + P` or `⌘ + ⇧ + P`
-2. Type in `python interpreter`, click on the search result called `Python: Select Interpreter`.
-3. After you click the search result, there should be $1$ or $2$ listings shown there.
-4. On the right side there should be either `Recommended` or `Global`. Click on the one that isn’t currently selected.
-5. Close and reopen vs code.
-6. Run it.
+Keep the existing site online while testing this copy on the GitHub Pages preview address. Do not configure the production custom domain or change DNS until the preview is ready. CNAME contains the intended production domain; leave it out of the staging upload to use the github.io address.
+
+When ready, configure www.solvexchange.org under repository Settings > Pages, update only its website DNS records, and enable HTTPS. Preserve email MX records, Google verification TXT records and the separate SolveXLabs subdomain. Once the replacement works at www.solvexchange.org with HTTPS, retire the original website backend. Keep a backup of its source. The separate SolveXLabs PWA must remain running.
+
+The named files change page URLs. Configure permanent HTTP 301 redirects at your proxy or redirect capable host from /aboutus and /aboutus/ to /html/aboutus.html, and likewise for resources, faq and getinvolved. GitHub Pages does not provide configurable server redirect rules. The included 404 script helps visitors following old links but returns an initial 404 and is not a substitute for SEO redirects.
+
+Keep googlea5f25ffb4bd4c8ed.html at the domain root. It verifies ownership, not individual pages, so do not create extra tokens for each page. Submit https://www.solvexchange.org/sitemap.xml in Google Search Console after launch. robots.txt points to that sitemap; each public page also has a canonical URL. No Change of Address request is needed when retaining the same domain.
+
+If you use the production sitemap and canonical URLs on a preview, keep the preview temporary and unlinked. Add a noindex meta tag to staging pages only if you want to exclude the preview from search, and remove it before production.
+
+Bug reports go to solvexchange.dev@gmail.com.
+
+The primary website address is https://www.solvexchange.org. Configure the apex domain solvexchange.org to redirect to this www address. The old website will no longer be used once the replacement is live; redirects preserve old links without keeping the old application running.
