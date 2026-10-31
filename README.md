@@ -4,8 +4,6 @@
 
 [www.solvexchange.org](https://www.solvexchange.org)
 
-The public website for SolveXchange. Built with HTML, CSS and JavaScript.
-
 ## Why I forked it
 
 The original site used Flask, but the public website doesn't need a backend anymore. I made this fork to move it to GitHub Pages and make it easier to work on.
