@@ -1,0 +1,42 @@
+/* let the boxes grow with their text */
+p, li, a, label { overflow-wrap:break-word; }
+button, .global-button { white-space:normal; overflow-wrap:anywhere; height:auto; min-height:44px; }
+#values-wrapper { width:84%; margin-inline:auto; gap:32px; justify-content:space-between; }
+.flip-card { max-width:330px; width:100%; height:auto; flex:1 1 0; }
+.flip-card-inner { display:grid; height:auto; min-height:300px; }
+.flip-card-front, .flip-card-back { position:relative; grid-area:1 / 1; height:auto; min-height:300px; }
+.flip-card-front img { width:100%; height:100%; object-fit:contain; }
+.flip-card-back { display:flex; align-items:center; padding:24px; }
+.backtext { margin:0; font-size:17px; line-height:1.6; }
+.bug-report { width:calc(100% - 48px); max-width:1360px; margin:28px auto 0; text-align:center; color:white; }
+.bug-report h2 { font-size:21px; margin:0 0 8px; }
+.bug-report p { margin:0; }
+.bug-report a { color:white; font-size:16px; display:inline-block; padding:8px; overflow-wrap:anywhere; }
+#second-wrapper-bottom-block { background:transparent; border-radius:0; padding:0; }
+.fifth-wrapper-div > div { min-width:0; }
+.fifth-wrapper-div > div:first-child { flex:1 1 0; }
+.fifth-wrapper-div > div:last-child { flex:0 1 280px; }
+#qa-button { width:100%; margin:0; }
+@media (min-width:701px) {
+ body[data-page="getinvolved"] { zoom:.78; }
+ #top-wrapper-judge { zoom:1.2; }
+ #top-wrapper-judge ~ section, #top-wrapper-judge ~ .dividerSponsorship, body[data-page="getinvolved"] footer { zoom:.94; }
+}
+@media (max-width:1100px) {
+ .fifth-wrapper-div > div:last-child { flex:0 1 auto; }
+}
+@media (max-width:700px) {
+ #values-wrapper { width:calc(100% - 48px); gap:24px; }
+ .flip-card { flex:none; width:min(330px,100%); }
+ .flip-card-inner, .flip-card-front, .flip-card-back { min-height:300px; }
+ #top-wrapper-judge .team-photo { width:240px; }
+ .third-wrapper-div, .fifth-wrapper-div { height:auto; }
+}
+
+[data-expand] { cursor:pointer; }
+
+body[data-page="index"] { overflow-x:clip; }
+#headertext { height:auto; line-height:1.4; }
+#join-body-l-1, #join-body-l-2, #join-body-l-3 { height:auto; line-height:1.4; }
+
+.earth-frame { position:absolute; inset:0; overflow:hidden; pointer-events:none; }

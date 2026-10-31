@@ -1,0 +1,204 @@
+/* keep the original styles and fix the parts that run out of room */
+html, body { margin:0; padding:0; }
+*, *::before, *::after { box-sizing:border-box; }
+html { scroll-padding-top:140px; -webkit-text-size-adjust:100%; }
+img { max-width:100%; }
+button { max-width:100%; cursor:pointer; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline:3px solid #7750b5; outline-offset:4px; }
+body.menu-open { overflow:hidden; }
+.sidebar { max-height:100dvh; overflow-y:auto; }
+#normal-interactables { padding-left:0; align-items:center; }
+#top-interactables, #body, #everything { min-width:0; }
+#top-bar { background:rgba(255,255,255,.98); }
+p, li { overflow-wrap:break-word; }
+#values-wrapper { width:70%; margin:0 15%; gap:0; justify-content:space-between; }
+.flip-card { flex:1 1 0; min-width:0; max-width:300px; border:0; }
+.flip-card-front { background:transparent; }
+#leader, #account, #passion { width:100%; height:100%; object-fit:contain; }
+.flip-card:focus-within .flip-card-inner { transform:rotateY(180deg); }
+.whatwedo-content { height:auto; min-height:225px; padding:24px; gap:24px; }
+.title1 { margin-left:0; flex:0 0 170px; }
+#text1, #text2, #text3 { margin-left:0; min-width:0; }
+#join-body { width:calc(100% - 120px); max-width:1360px; margin:50px auto; height:auto; display:grid; grid-template-columns:minmax(320px,1fr) minmax(0,1.8fr); gap:60px; align-items:start; }
+#join-body-b { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px; margin-top:0; }
+#join-body-l, #join-body-m, #join-body-r { min-width:0; max-width:none; }
+#join-body-r p { min-width:0; overflow-wrap:anywhere; }
+#join-body-r img { flex:0 0 auto; object-fit:contain; }
+#join-body-r-1-wrap, #join-body-r-2-wrap, #join-body-r-3-wrap, #join-body-r-4-wrap { height:auto; min-height:60px; }
+.team-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:32px; }
+.team-member { flex:0 1 190px; min-width:0; max-width:220px; }
+.team-member img.team-photo { width:min(180px,100%); height:auto; aspect-ratio:3/4; object-fit:cover; }
+/* the same scrolling strip without the gap at the loop */
+.carousel-track-container { --story-gap:80px; display:flex; gap:0; overflow:hidden; white-space:nowrap; }
+.carousel-track { display:flex; flex:0 0 auto; width:max-content; gap:var(--story-gap); padding-inline:calc(var(--story-gap)/2); animation:slide 35s linear infinite; }
+.carousel-track img { display:block; width:auto; max-width:none; height:350px; margin:0; object-fit:contain; }
+.carousel-track-container::before, .carousel-track-container::after { pointer-events:none; }
+.carousel-track-container:focus-within .carousel-track { animation-play-state:paused; }
+/* smaller text and image in the existing invitation section */
+#ways-extra-info { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; align-items:stretch; margin-top:0; }
+#ways-extra-format2, #ways-extra-format3 { width:auto; height:auto; margin:0; }
+#second-wrapper { height:auto; min-height:0; margin-top:0; display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:40px; align-items:center; padding:48px max(24px,calc((100% - 1120px)/2)); }
+#second-wrapper-left { min-width:0; margin:0; }
+#second-wrapper .second-wrapper-subtitle { font-size:28px; line-height:1.4; }
+#second-wrapper .second-wrapper-subtext { font-size:16px; line-height:1.8; }
+#second-wrapper .line-height-35 { line-height:1.8; }
+#second-wrapper #sponsor { margin-top:28px; }
+#second-wrapper-bottom-block { width:100%; height:auto; padding:16px; margin:24px 0 0; border-radius:20px; }
+#second-wrapper-email { padding:0; font-size:16px; line-height:1.6; }
+#email-button { width:auto; max-width:100%; min-height:46px; height:auto; padding:10px 18px; margin:12px 0 0; font-size:clamp(12px,1.4vw,16px); word-spacing:normal; }
+#email-button img { width:22px; height:22px; object-fit:contain; }
+#email-text { overflow-wrap:anywhere; }
+#second-wrapper-right { min-width:0; width:100%; height:auto; }
+#img-displayed { display:block; visibility:visible; width:100%; height:auto; max-height:340px; aspect-ratio:4/3; object-fit:cover; }
+#top-wrapper-judge { margin-top:0; padding:0 24px 40px; border-top:2px solid white; }
+#top-wrapper-judge #top-title-div { padding-top:40px; }
+#top-wrapper-judge .team-photo { display:block; width:220px; height:auto; max-height:300px; object-fit:contain; margin:24px auto; }
+#getinvolved-judge { width:100%; max-width:800px; margin:24px auto 0; font-size:16px; line-height:1.8; }
+#getinvolved-judge .line-height-35 { line-height:1.8; }
+#second-wrapper-left3 { width:min(1000px,calc(100% - 48px)); margin:32px auto; }
+#second-wrapper3 { padding:32px 24px 48px; }
+#second-wrapper3 .second-wrapper-subtext { margin:24px auto; max-width:900px; }
+#sponsors-logos { display:flex; align-items:center; justify-content:center; margin:24px auto; }
+.sponsor-logo { width:auto; max-width:min(300px,100%); height:auto; max-height:145px; object-fit:contain; }
+#second-wrapper3 .split-line { width:min(900px,100%); border:0; border-top:1px solid #a2c3d9; height:0; margin:32px auto; }
+#keep-exploring { width:min(1150px,calc(100% - 120px)); margin:40px auto 100px; }
+#keep-exploring-left { flex:1; min-width:0; padding-left:40px; padding-right:40px; }
+#keep-exploring-right { flex:1; min-width:0; }
+#keep-exploring-right-image { display:block; width:100%; height:100%; object-fit:cover; }
+#keep-exploring-left .gradient-button { width:100%; }
+#joinus { gap:24px; padding:32px; }
+.join-left, .join-right { min-width:0; margin:0; }
+#join-center { min-width:0; max-width:400px; }
+#joinus-image { display:block; width:100%; height:auto; }
+#forth-wrapper-inner { max-width:1120px; margin-right:40px; }
+.fifth-wrapper-div { max-width:calc(100% - 48px); gap:32px; }
+@media (max-width:1100px) {
+ #join-body { grid-template-columns:1fr; gap:32px; }
+ #join-body-b { gap:32px; }
+ #join-body-l1 { flex-wrap:wrap; justify-content:center; }
+ #values-wrapper { width:90%; margin:0 auto; }
+ #second-wrapper { grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); }
+ #getinvolved-slogan { max-width:850px; margin:0 auto; padding-inline:24px; }
+ #top-title { font-size:clamp(36px,6vw,64px); }
+ #ways-info-title { font-size:clamp(28px,4vw,44px); }
+ .ways-extra-info-subtitle { font-size:clamp(24px,3vw,32px); }
+ .ways-extra-info-subtext { font-size:clamp(17px,2.2vw,22px); line-height:1.7; }
+ .carousel-track-container { --story-gap:32px; }
+ .carousel-track img { height:clamp(240px,75vw,350px); }
+ #lowermorebottomleft { margin-right:40px; }
+ #lowermorebottom { width:90%; }
+}
+@media (max-width:850px) {
+ #second-wrapper { grid-template-columns:1fr; gap:24px; }
+ #second-wrapper-right { max-width:480px; margin:0 auto; }
+ #img-displayed { max-height:280px; }
+ #email-button { font-size:15px; }
+ .whatwedo-content { width:90%; }
+ .title1 { flex-basis:145px; font-size:28px; }
+ #text1, #text2, #text3 { font-size:18px; }
+ #headertext-1 { padding-left:0; }
+ .collapsible { margin-inline:24px; }
+ #headerwrap-1, #headerwrap-2, #headerwrap-3 { margin-inline:24px; }
+ #keep-exploring { width:calc(100% - 48px); }
+ #keep-exploring-left { padding-inline:24px; }
+ .gradient-button { max-width:100%; font-size:18px; padding:12px 20px; }
+ #joinus { flex-direction:column; }
+ .join-left, .join-right { padding:0; margin:0; }
+}
+@media (max-width:700px) {
+ html { scroll-padding-top:100px; }
+ #top-bar { gap:12px; }
+ #top-interactables { margin-left:0; }
+ #normal-interactables { padding:0; }
+ .sidebar { width:min(320px,100%); padding-left:28px; }
+ .sidebar .toplink a { min-height:44px; display:flex; align-items:center; }
+ #join-body { width:calc(100% - 48px); margin:32px auto; }
+ #join-body-b { grid-template-columns:1fr; }
+ #join-body-l-1, #join-body-l-2, #join-body-l-3 { font-size:clamp(25px,7.5vw,35px); }
+ #join-body-l-4 { max-width:100%; }
+ #values-wrapper { display:flex; flex-direction:column; align-items:center; gap:24px; }
+ .flip-card { flex:none; width:min(300px,100%); margin:0; height:275px; }
+ #values .title, #whatwedo .title { margin-bottom:24px; }
+ #ways-extra-info { grid-template-columns:1fr; }
+ #ways-info-displayed { width:calc(100% - 48px); }
+ .team-grid { gap:28px 16px; }
+ .team-member { flex-basis:calc((100% - 16px)/2); }
+ .team-name { font-size:16px; }
+ #top-wrapper-judge #top-title { font-size:38px; }
+ #getinvolved-judge { font-size:16px; }
+ #second-wrapper3 .second-wrapper-subtitle { font-size:28px; }
+ #keep-exploring { flex-direction:column; }
+ #keep-exploring-left { border-radius:20px 20px 0 0; }
+ #keep-exploring-right-image { height:auto; max-height:300px; border-radius:0 0 20px 20px; }
+ #forth-wrapper-inner { margin:40px 24px; }
+ #forth-wrapper-subtitle { font-size:32px; }
+ #forth-wrapper-subtitle2 { font-size:24px; }
+ .forth-wrapper-subtext { font-size:17px; line-height:1.8; }
+ .third-wrapper-div { width:calc(100% - 48px); padding:24px; }
+ .third-wrapper-title { font-size:26px; line-height:1.5; }
+ .third-wrapper-subtext { font-size:17px; line-height:1.8; }
+ .third-wrapper-button { max-width:100%; font-size:20px; }
+ .third-wrapper-expandtext { margin-left:24px; font-size:17px; }
+ .fifth-wrapper-div { width:calc(100% - 48px); max-width:none; padding:28px; margin-top:48px; }
+ .fifth-wrapper-title { font-size:32px; }
+ .fifth-wrapper-div br { display:none; }
+ #qa-button { width:220px; max-width:100%; height:60px; font-size:26px; }
+ #extra-wrapper { display:block; visibility:visible; width:calc(100% - 48px); padding:24px; }
+ #extra-title { font-size:30px; }
+ #extra-info { flex-direction:column; }
+ .extra-format { padding:16px 0; }
+ #lowermorebottomleft { max-width:100%; margin:0; }
+}
+@media (max-width:480px) {
+ #topportion #headertext { font-size:clamp(36px,11vw,44px); }
+ #topportion #desctext { padding-inline:20px; }
+ .whatwedo-content { flex-direction:column; align-items:flex-start; gap:12px; }
+ .title1 { flex-basis:auto; font-size:24px; }
+ #text1, #text2, #text3 { margin:0; padding:0; font-size:16px; line-height:1.7; }
+}
+@media (prefers-reduced-motion:reduce) {
+ *, *::before, *::after { animation:none !important; transition:none !important; }
+ .carousel-track-container { overflow-x:auto; }
+ .carousel-track + .carousel-track { display:none; }
+}
+@media (max-width:850px) {
+ #extra-info { flex-direction:column; }
+ .extra-format { width:100%; min-width:0; }
+}
+@media (max-width:480px) {
+ #leftwrappertop { min-width:0; width:100%; }
+ [data-page="index"] #headertext { font-size:clamp(30px,9.5vw,40px); }
+}
+.carousel-track-container.is-loading .carousel-track { animation-play-state:paused; }
+
+
+/* scale the original page together */
+body[data-page="getinvolved"] { zoom:.85; }
+#ways-extra-info { display:flex; justify-content:space-between; align-items:flex-start; gap:0; margin-top:-2%; }
+#ways-extra-format1, #ways-extra-format2, #ways-extra-format3 { width:30%; height:auto; max-width:none; flex:none; padding:25px; }
+#ways-extra-format1 { margin:130px 0 0; }
+#ways-extra-format2 { margin:0 0 250px; }
+#ways-extra-format3 { margin:210px 0 100px; }
+#second-wrapper > #startachapter-position, #second-wrapper2 > #sponsorship-package { position:absolute; top:0; left:0; }
+#second-wrapper { align-items:start; }
+#second-wrapper-left { width:100%; }
+#second-wrapper-right { margin:0; }
+#second-wrapper2 { margin-top:0; }
+.dividerSponsorship { height:100px; background:#d9eefd; }
+#top-wrapper-judge { display:grid; grid-template-columns:minmax(0,800px) 220px; justify-content:center; align-items:start; gap:24px 40px; }
+#top-wrapper-judge #top-title-div { grid-column:1 / -1; }
+#getinvolved-judge { grid-column:1; grid-row:2; margin:0; }
+#getinvolved-judge p:first-child { margin-top:0; }
+#top-wrapper-judge .team-photo { grid-column:2; grid-row:2; margin:0; }
+#second-wrapper3 .sponsor-logo { width:460px; max-width:100%; max-height:260px; height:auto; }
+#second-wrapper3 .sponsor-community { width:320px; }
+.fifth-wrapper-div { align-items:center; }
+.fifth-wrapper-div > div { min-width:0; }
+#qa-button { max-width:100%; }
+@media (max-width:700px) {
+ body[data-page="getinvolved"] { zoom:1; }
+ #ways-extra-info { flex-direction:column; gap:32px; }
+ #ways-extra-format1, #ways-extra-format2, #ways-extra-format3 { width:100%; margin:0; }
+ #top-wrapper-judge { grid-template-columns:minmax(0,1fr); }
+ #top-wrapper-judge .team-photo { grid-column:1; grid-row:3; margin:0 auto; }
+}
